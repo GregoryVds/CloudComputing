@@ -18,10 +18,7 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.mapreduce.Job;
 import init.*;
 import iter.*;
-import iter.IterMapper;
-import iter.IterReducer;
-
-
+import evaluate.*;
 
 public class PoIDriver extends Configured implements Tool
 {
@@ -114,9 +111,10 @@ public class PoIDriver extends Configured implements Tool
     void iter(String inputDir, String outputDir, String srcId, String dstId, int iterNo, int nReducers) throws Exception
     {
         Logger.getRootLogger().fatal("[INGI2145] iter: " + inputDir + " (to) " + outputDir);
+        CONF.set("srcId", srcId);
+        CONF.set("dstId", dstId);
         Job iterJob = Utils.configureJob(inputDir, outputDir, IterMapper.class, null, IterReducer.class, Text.class, Text.class, Text.class, Text.class, nReducers);
         iterJob.waitForCompletion(true);
-        System.out.println("Done");
     }
 
 
@@ -125,8 +123,10 @@ public class PoIDriver extends Configured implements Tool
     void evaluate(String inputDir, String outputDir, String srcId, String dstId, int nReducers) throws Exception
     {
         Logger.getRootLogger().fatal("[INGI2145] evaluate from:" + inputDir);
-
-        // TODO
+        CONF.set("srcId", srcId);
+        CONF.set("dstId", dstId);
+        Job evaluateJob = Utils.configureJob(inputDir, outputDir, EvaluateMapper.class, null, EvaluateReducer.class, Text.class, Text.class, Text.class, Text.class, nReducers);
+        evaluateJob.waitForCompletion(true);
     }
 
     // ---------------------------------------------------------------------------------------------

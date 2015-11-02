@@ -3856,3 +3856,1433 @@ INFO - Counters: 30
 		Bytes Read=232
 	File Output Format Counters 
 		Bytes Written=197
+FATAL - [INGI2145] evaluate from:output/iter2
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local2104977867_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local2104977867_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local2104977867_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter2/part-r-00000:0+239
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Task:attempt_local2104977867_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local2104977867_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local2104977867_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local2104977867_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@4c07e861
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local2104977867_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local2104977867_0001_m_000000_0 decomp: 2 len: 6 to MEMORY
+INFO - Read 2 bytes from map-output for attempt_local2104977867_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->2
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+INFO - Merged 1 segments, 2 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 6 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local2104977867_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local2104977867_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local2104977867_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local2104977867_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local2104977867_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local2104977867_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local2104977867_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local2104977867_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=910
+		FILE: Number of bytes written=498846
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=259
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter2
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local2134683740_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local2134683740_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local2134683740_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter2/part-r-00000:0+239
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Task:attempt_local2134683740_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local2134683740_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local2134683740_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local2134683740_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@2bbdb0be
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local2134683740_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local2134683740_0001_m_000000_0 decomp: 2 len: 6 to MEMORY
+INFO - Read 2 bytes from map-output for attempt_local2134683740_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->2
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+INFO - Merged 1 segments, 2 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 6 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local2134683740_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local2134683740_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local2134683740_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local2134683740_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local2134683740_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local2134683740_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local2134683740_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local2134683740_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=910
+		FILE: Number of bytes written=498846
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=259
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter2
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local861323165_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local861323165_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local861323165_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter2/part-r-00000:0+239
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Task:attempt_local861323165_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local861323165_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local861323165_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local861323165_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@51e1d3d3
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local861323165_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local861323165_0001_m_000000_0 decomp: 2 len: 6 to MEMORY
+INFO - Read 2 bytes from map-output for attempt_local861323165_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->2
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+INFO - Merged 1 segments, 2 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 6 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 0 segments left of total size: 0 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local861323165_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local861323165_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local861323165_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local861323165_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local861323165_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local861323165_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local861323165_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local861323165_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=910
+		FILE: Number of bytes written=496146
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=0
+		Reduce shuffle bytes=6
+		Reduce input records=0
+		Reduce output records=0
+		Spilled Records=0
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=259
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter2
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1078060204_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1078060204_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1078060204_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter2/part-r-00000:0+239
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 8; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1078060204_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1078060204_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1078060204_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1078060204_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@230ab01e
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1078060204_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1078060204_0001_m_000000_0 decomp: 14 len: 18 to MEMORY
+INFO - Read 14 bytes from map-output for attempt_local1078060204_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 14, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->14
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 10 bytes
+INFO - Merged 1 segments, 14 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 18 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 10 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1078060204_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1078060204_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1078060204_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local1078060204_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1078060204_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1078060204_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1078060204_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1078060204_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=934
+		FILE: Number of bytes written=500046
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=2
+		Map output bytes=8
+		Map output materialized bytes=18
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=18
+		Reduce input records=2
+		Reduce output records=2
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=259
+	File Output Format Counters 
+		Bytes Written=20
+FATAL - [INGI2145] evaluate from:output/iter2
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1806966854_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1806966854_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1806966854_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter2/part-r-00000:0+239
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 8; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1806966854_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1806966854_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1806966854_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1806966854_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@230ab01e
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1806966854_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1806966854_0001_m_000000_0 decomp: 14 len: 18 to MEMORY
+INFO - Read 14 bytes from map-output for attempt_local1806966854_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 14, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->14
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 10 bytes
+INFO - Merged 1 segments, 14 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 18 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 10 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1806966854_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1806966854_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1806966854_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local1806966854_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1806966854_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1806966854_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1806966854_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1806966854_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=934
+		FILE: Number of bytes written=500049
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=2
+		Map output bytes=8
+		Map output materialized bytes=18
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=18
+		Reduce input records=2
+		Reduce output records=1
+		Spilled Records=4
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=259
+	File Output Format Counters 
+		Bytes Written=23
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1519190089_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1519190089_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1519190089_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 12; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1519190089_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1519190089_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1519190089_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1519190089_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@90923d
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1519190089_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1519190089_0001_m_000000_0 decomp: 20 len: 24 to MEMORY
+INFO - Read 20 bytes from map-output for attempt_local1519190089_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 20, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->20
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - Merged 1 segments, 20 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 24 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1519190089_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1519190089_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1519190089_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/evaluate/_temporary/0/task_local1519190089_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1519190089_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1519190089_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1519190089_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1519190089_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=892
+		FILE: Number of bytes written=500047
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=12
+		Map output materialized bytes=24
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=24
+		Reduce input records=3
+		Reduce output records=2
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=31
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local246901259_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local246901259_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local246901259_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 12; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local246901259_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local246901259_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local246901259_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local246901259_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@51eecc68
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local246901259_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local246901259_0001_m_000000_0 decomp: 20 len: 24 to MEMORY
+INFO - Read 20 bytes from map-output for attempt_local246901259_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 20, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->20
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - Merged 1 segments, 20 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 24 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local246901259_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local246901259_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local246901259_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local246901259_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local246901259_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local246901259_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local246901259_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local246901259_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=892
+		FILE: Number of bytes written=497375
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=12
+		Map output materialized bytes=24
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=24
+		Reduce input records=3
+		Reduce output records=2
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=31
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1073463881_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1073463881_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1073463881_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 12; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1073463881_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1073463881_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1073463881_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1073463881_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@6840b0f5
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1073463881_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1073463881_0001_m_000000_0 decomp: 20 len: 24 to MEMORY
+INFO - Read 20 bytes from map-output for attempt_local1073463881_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 20, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->20
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - Merged 1 segments, 20 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 24 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1073463881_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1073463881_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1073463881_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local1073463881_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1073463881_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1073463881_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1073463881_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1073463881_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=892
+		FILE: Number of bytes written=500052
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=12
+		Map output materialized bytes=24
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=24
+		Reduce input records=3
+		Reduce output records=0
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1510396339_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1510396339_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1510396339_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 12; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1510396339_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1510396339_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1510396339_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1510396339_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@78be86ca
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1510396339_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1510396339_0001_m_000000_0 decomp: 20 len: 24 to MEMORY
+INFO - Read 20 bytes from map-output for attempt_local1510396339_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 20, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->20
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - Merged 1 segments, 20 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 24 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1510396339_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1510396339_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1510396339_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local1510396339_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1510396339_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1510396339_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1510396339_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1510396339_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=892
+		FILE: Number of bytes written=500052
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=12
+		Map output materialized bytes=24
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=24
+		Reduce input records=3
+		Reduce output records=0
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local826471707_0001
+INFO - OutputCommitter set in config null
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local826471707_0001
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local826471707_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 12; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local826471707_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local826471707_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local826471707_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local826471707_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@78be86ca
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local826471707_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local826471707_0001_m_000000_0 decomp: 20 len: 24 to MEMORY
+INFO - Read 20 bytes from map-output for attempt_local826471707_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 20, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->20
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - Merged 1 segments, 20 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 24 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local826471707_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local826471707_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local826471707_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local826471707_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local826471707_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local826471707_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local826471707_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local826471707_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=892
+		FILE: Number of bytes written=497352
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=12
+		Map output materialized bytes=24
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=24
+		Reduce input records=3
+		Reduce output records=0
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1684604780_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1684604780_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1684604780_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 12; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1684604780_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1684604780_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1684604780_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1684604780_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@22ce3d22
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1684604780_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1684604780_0001_m_000000_0 decomp: 20 len: 24 to MEMORY
+INFO - Read 20 bytes from map-output for attempt_local1684604780_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 20, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->20
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - Merged 1 segments, 20 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 24 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 16 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1684604780_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1684604780_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1684604780_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local1684604780_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1684604780_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1684604780_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1684604780_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1684604780_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=892
+		FILE: Number of bytes written=500052
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=12
+		Map output materialized bytes=24
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2
+		Reduce shuffle bytes=24
+		Reduce input records=3
+		Reduce output records=0
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=8
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local435005745_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local435005745_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local435005745_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 18; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local435005745_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local435005745_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local435005745_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local435005745_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@24c5f57
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local435005745_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local435005745_0001_m_000000_0 decomp: 26 len: 30 to MEMORY
+INFO - Read 26 bytes from map-output for attempt_local435005745_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 26, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->26
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 22 bytes
+INFO - Merged 1 segments, 26 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 30 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 22 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local435005745_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local435005745_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local435005745_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local435005745_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local435005745_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local435005745_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local435005745_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local435005745_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=904
+		FILE: Number of bytes written=497390
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=18
+		Map output materialized bytes=30
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=30
+		Reduce input records=3
+		Reduce output records=1
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=28
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local1813172693_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - Running job: job_local1813172693_0001
+INFO - OutputCommitter set in config null
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local1813172693_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 18; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local1813172693_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local1813172693_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local1813172693_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local1813172693_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@6840b0f5
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local1813172693_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local1813172693_0001_m_000000_0 decomp: 26 len: 30 to MEMORY
+INFO - Read 26 bytes from map-output for attempt_local1813172693_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 26, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->26
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 22 bytes
+INFO - Merged 1 segments, 26 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 30 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 22 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local1813172693_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local1813172693_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local1813172693_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local1813172693_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local1813172693_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local1813172693_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local1813172693_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local1813172693_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=904
+		FILE: Number of bytes written=500090
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=18
+		Map output materialized bytes=30
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=30
+		Reduce input records=3
+		Reduce output records=1
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=28
+FATAL - [INGI2145] evaluate from:output/iter3
+WARN - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+INFO - session.id is deprecated. Instead, use dfs.metrics.session-id
+INFO - Initializing JVM Metrics with processName=JobTracker, sessionId=
+WARN - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+INFO - Total input paths to process : 1
+INFO - number of splits:1
+INFO - Submitting tokens for job: job_local405400433_0001
+INFO - The url to track the job: http://localhost:8080/
+INFO - OutputCommitter set in config null
+INFO - Running job: job_local405400433_0001
+INFO - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+INFO - Waiting for map tasks
+INFO - Starting task: attempt_local405400433_0001_m_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Processing split: file:/Users/Greg/Desktop/hw1/output/iter3/part-r-00000:0+212
+INFO - (EQUATOR) 0 kvi 26214396(104857584)
+INFO - mapreduce.task.io.sort.mb: 100
+INFO - soft limit at 83886080
+INFO - bufstart = 0; bufvoid = 104857600
+INFO - kvstart = 26214396; length = 6553600
+INFO - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+INFO - 
+INFO - Starting flush of map output
+INFO - Spilling map output
+INFO - bufstart = 0; bufend = 18; bufvoid = 104857600
+INFO - kvstart = 26214396(104857584); kvend = 26214388(104857552); length = 9/6553600
+INFO - Finished spill 0
+INFO - Task:attempt_local405400433_0001_m_000000_0 is done. And is in the process of committing
+INFO - map
+INFO - Task 'attempt_local405400433_0001_m_000000_0' done.
+INFO - Finishing task: attempt_local405400433_0001_m_000000_0
+INFO - map task executor complete.
+INFO - Waiting for reduce tasks
+INFO - Starting task: attempt_local405400433_0001_r_000000_0
+INFO - ProcfsBasedProcessTree currently is supported only on Linux.
+INFO -  Using ResourceCalculatorProcessTree : null
+INFO - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@6840b0f5
+INFO - MergerManager: memoryLimit=1503238528, maxSingleShuffleLimit=375809632, mergeThreshold=992137472, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+INFO - attempt_local405400433_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+INFO - localfetcher#1 about to shuffle output of map attempt_local405400433_0001_m_000000_0 decomp: 26 len: 30 to MEMORY
+INFO - Read 26 bytes from map-output for attempt_local405400433_0001_m_000000_0
+INFO - closeInMemoryFile -> map-output of size: 26, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->26
+INFO - EventFetcher is interrupted.. Returning
+INFO - 1 / 1 copied.
+INFO - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 22 bytes
+INFO - Merged 1 segments, 26 bytes to disk to satisfy reduce memory limit
+INFO - Merging 1 files, 30 bytes from disk
+INFO - Merging 0 segments, 0 bytes from memory into reduce
+INFO - Merging 1 sorted segments
+INFO - Down to the last merge-pass, with 1 segments left of total size: 22 bytes
+INFO - 1 / 1 copied.
+INFO - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+INFO - Task:attempt_local405400433_0001_r_000000_0 is done. And is in the process of committing
+INFO - 1 / 1 copied.
+INFO - Task attempt_local405400433_0001_r_000000_0 is allowed to commit now
+INFO - Saved output of task 'attempt_local405400433_0001_r_000000_0' to file:/Users/Greg/Desktop/hw1/output/evaluate/_temporary/0/task_local405400433_0001_r_000000
+INFO - reduce > reduce
+INFO - Task 'attempt_local405400433_0001_r_000000_0' done.
+INFO - Finishing task: attempt_local405400433_0001_r_000000_0
+INFO - reduce task executor complete.
+INFO - Job job_local405400433_0001 running in uber mode : false
+INFO -  map 100% reduce 100%
+INFO - Job job_local405400433_0001 completed successfully
+INFO - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=904
+		FILE: Number of bytes written=497382
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=15
+		Map output records=3
+		Map output bytes=18
+		Map output materialized bytes=30
+		Input split bytes=119
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=30
+		Reduce input records=3
+		Reduce output records=1
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=514850816
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=232
+	File Output Format Counters 
+		Bytes Written=20
