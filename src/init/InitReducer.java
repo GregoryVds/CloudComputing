@@ -24,12 +24,14 @@ public class InitReducer extends Reducer<Text, Text, Text, Text>
     	// The adjacency list has the form ":2:3:4"
         // where 2,3,4 are indices of adjacent nodes.
     	String ajdList = "";
+    	String val;
         for (Text value : values) {
-        	if (sourceId.equals(value.toString())) isAjdToOrigin = true;
+        	val = value.toString();
+        	if (sourceId.equals(val)) isAjdToOrigin = true;
         	
         	// Knowing this will allow us to initiate the distance at 1
         	// for nodes adjacent to source and skip one MapReduce iteration.
-        	ajdList+=(":"+value.toString());
+        	ajdList+=(":"+val);
         }
         
         String distance;
@@ -38,7 +40,7 @@ public class InitReducer extends Reducer<Text, Text, Text, Text>
         else if (isAjdToOrigin)
         	distance = "1";
         else
-        	distance = "-1";
+        	distance = Integer.toString(Integer.MAX_VALUE);
               	 
         // We output "NodeNumber" => "DistanceFromSource AdjList"
         // Example: "12" => "14 3:14:53"

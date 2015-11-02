@@ -17,6 +17,11 @@ import org.apache.hadoop.io.*;
 
 import org.apache.hadoop.mapreduce.Job;
 import init.*;
+import iter.*;
+import iter.IterMapper;
+import iter.IterReducer;
+
+
 
 public class PoIDriver extends Configured implements Tool
 {
@@ -99,7 +104,6 @@ public class PoIDriver extends Configured implements Tool
         Logger.getRootLogger().fatal("[INGI2145] init");
         CONF.set("srcId", srcId);
         CONF.set("dstId", dstId);
-        System.out.println("Running init");
         Job initJob = Utils.configureJob(inputDir, outputDir, InitMapper.class, null, InitReducer.class, Text.class, Text.class, Text.class, Text.class, nReducers);
         initJob.waitForCompletion(true);
     }
@@ -110,8 +114,9 @@ public class PoIDriver extends Configured implements Tool
     void iter(String inputDir, String outputDir, String srcId, String dstId, int iterNo, int nReducers) throws Exception
     {
         Logger.getRootLogger().fatal("[INGI2145] iter: " + inputDir + " (to) " + outputDir);
-
-        // TODO
+        Job iterJob = Utils.configureJob(inputDir, outputDir, IterMapper.class, null, IterReducer.class, Text.class, Text.class, Text.class, Text.class, nReducers);
+        iterJob.waitForCompletion(true);
+        System.out.println("Done");
     }
 
 
