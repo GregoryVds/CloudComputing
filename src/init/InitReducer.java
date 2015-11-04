@@ -41,10 +41,11 @@ public class InitReducer extends Reducer<Text, Text, Text, Text>
         	distance = "1";
         else
         	distance = Integer.toString(Integer.MAX_VALUE);
-              	 
-        // We output "NodeNumber" => "DistanceFromSource AdjList"
-        // Example: "12" => "14 3:14:53"
-        String nodeRep = distance + " " + ajdList;         
+
+        // The intermediate format contains one line per node with
+        // the following information:
+        // Example: "12" => "0 14 3:14:53"
+        String nodeRep = 0 + " " + distance + " " + ajdList;         
         context.write(key, new Text(nodeRep));
     }
 }

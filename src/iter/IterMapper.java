@@ -14,8 +14,9 @@ public class IterMapper extends Mapper<LongWritable, Text, Text, Text> {
 		String[] splited = line.split("\\s+");
 			
 		String nodeId 	= splited[0];
-		int distance  	= Integer.parseInt(splited[1]);
-		String adjList 	= splited[2];
+		int iterNbr 	= Integer.parseInt(splited[1]);
+		int distance  	= Integer.parseInt(splited[2]);
+		String adjList 	= splited[3];
 	
 		// Propagate distances.
 		Integer newDist;
@@ -28,7 +29,7 @@ public class IterMapper extends Mapper<LongWritable, Text, Text, Text> {
 		}
 		
 		// Pass along graph structure.
-		String nodeRep = distance + " " + adjList;
+		String nodeRep = (iterNbr+1) + " " + distance + " " + adjList;
 		context.write(new Text(nodeId), new Text(nodeRep));
 	}	
 }
