@@ -5,6 +5,7 @@ import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -19,7 +20,15 @@ import java.io.InputStreamReader;
 import java.net.URI;
 
 public class Utils
-{
+{	
+	/*
+    The intermediate format contains 1 line per node. For each node, we have the following information:
+    "nodeId => iterationNumber distance pathToNode adjList".
+    */
+	public static Text buildIntermediateRep(int iterNbr, int distance, String pathToNode, String adjList) {
+		return new Text(iterNbr+" "+Integer.toString(distance)+" "+pathToNode+" "+adjList);
+	}
+	
     /**
      * Delete the given folder.
      */

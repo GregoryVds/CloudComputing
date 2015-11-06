@@ -3,6 +3,8 @@ package be_uclouvain_ingi2145_p1;
 import org.apache.hadoop.conf.Configuration;
 
 import org.apache.hadoop.conf.Configured;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.apache.log4j.Appender;
@@ -134,6 +136,25 @@ public class PoIDriver extends Configured implements Tool
     void composite(String inputDir, String outputDir, String srcId, String dstId, int maxHops, int nReducers) throws Exception
     {
         Logger.getRootLogger().fatal("[INGI2145] composite: " + inputDir + " (to) " + outputDir);
-
+        CONF.set("srcId", srcId);
+        CONF.set("dstId", dstId);
+        
+        // A first -1 since we expand 1 HOP during the initial phase.
+        // Another -1 since we can stop when we reach a neighbor 1 hop away of the destination.
+        int iterationsLeft = maxHops - 2;
+        int iterNo = 0;
+        
+        init(inputDir, "out/iter"+iterNo, srcId, dstId, nReducers);
+        evaluate("out/iter"+iterNo, outputDir, srcId, dstId, nReducers);
+        
+        while (iterationsLeft > 0 && !hasResultAtPath(outputDir)) {
+        	iter("out/iter"+iterNo, "out/iter"+(++iterNo), srcId, dstId, iterNo, nReducers);  
+        	evaluate("out/iter"+iterNo, outputDir, srcId, dstId, nReducers);
+        	iterationsLeft--;
+        }
+    }
+    
+    boolean hasResultAtPath(String path) throws Exception {
+    	return Utils.checkResults(FileSystem.get(PoIDriver.GET.getConf()), new Path(path));
     }
 }
