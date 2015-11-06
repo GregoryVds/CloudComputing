@@ -1,0 +1,13 @@
+How to run the extra job to get the set of immediate neighbors:
+
+You can run the job in isolation, using the exact same arguments as the evaluate task.
+This isolated task is called "neighbors".
+
+For example:
+"./run.sh neighbors outputIterationX out 1 5 1"
+
+Or you can also run the job as a composite task, using the exact same arguments as the composite task.
+This composited task is called "neighborsComposite".
+
+For example:
+"./run.sh neighborsComposite input output 1 12 4 1"

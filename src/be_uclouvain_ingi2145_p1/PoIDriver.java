@@ -21,6 +21,7 @@ import org.apache.hadoop.mapreduce.Job;
 import init.*;
 import iter.*;
 import evaluate.*;
+import neighbors.*;
 
 public class PoIDriver extends Configured implements Tool
 {
@@ -85,8 +86,14 @@ public class PoIDriver extends Configured implements Tool
             case "evaluate":
                 evaluate(args[1], args[2], args[3], args[4], Integer.parseInt(args[5]));
                 break;
+            case "neighbors":
+                neighbors(args[1], args[2], args[3], args[4], Integer.parseInt(args[5]));
+                break;
             case "composite":
                 composite(args[1], args[2], args[3], args[4], Integer.parseInt(args[5]), Integer.parseInt(args[6]));
+                break;
+            case "neighborsComposite":
+            	neighborsComposite(args[1], args[2], args[3], args[4], Integer.parseInt(args[5]), Integer.parseInt(args[6]));
                 break;
             default:
                 System.out.println("Unknown command: " + args[0]);
@@ -144,15 +151,51 @@ public class PoIDriver extends Configured implements Tool
         int iterationsLeft = maxHops - 2;
         int iterNo = 0;
         
-        init(inputDir, "out/iter"+iterNo, srcId, dstId, nReducers);
-        evaluate("out/iter"+iterNo, outputDir, srcId, dstId, nReducers);
+        init(inputDir, "/tmp/iter"+iterNo, srcId, dstId, nReducers);
+        evaluate("/tmp/iter"+iterNo, outputDir, srcId, dstId, nReducers);
         
         while (iterationsLeft > 0 && !hasResultAtPath(outputDir)) {
-        	iter("out/iter"+iterNo, "out/iter"+(++iterNo), srcId, dstId, iterNo, nReducers);  
-        	evaluate("out/iter"+iterNo, outputDir, srcId, dstId, nReducers);
+        	iter("/tmp/iter"+iterNo, "/tmp/iter"+(++iterNo), srcId, dstId, iterNo, nReducers);  
+        	evaluate("/tmp/iter"+iterNo, outputDir, srcId, dstId, nReducers);
         	iterationsLeft--;
         }
     }
+    
+    // ---------------------------------------------------------------------------------------------
+   
+    void neighbors(String inputDir, String outputDir, String srcId, String dstId, int nReducers) throws Exception
+    {
+        Logger.getRootLogger().fatal("[INGI2145] neighbors from:" + inputDir);
+        CONF.set("srcId", srcId);
+        CONF.set("dstId", dstId);
+        Job neighborsJob = Utils.configureJob(inputDir, outputDir, EvaluateMapper.class, null, NeighborsReducer.class, Text.class, Text.class, Text.class, Text.class, nReducers);
+        neighborsJob.waitForCompletion(true);
+    }
+    
+    // ---------------------------------------------------------------------------------------------
+    
+    void neighborsComposite(String inputDir, String outputDir, String srcId, String dstId, int maxHops, int nReducers) throws Exception
+    {
+        Logger.getRootLogger().fatal("[INGI2145] neighborsComposite: " + inputDir + " (to) " + outputDir);
+        CONF.set("srcId", srcId);
+        CONF.set("dstId", dstId);
+        
+        // A first -1 since we expand 1 HOP during the initial phase.
+        // Another -1 since we can stop when we reach a neighbor 1 hop away of the destination.
+        int iterationsLeft = maxHops - 2;
+        int iterNo = 0;
+        
+        init(inputDir, "/tmp/iter"+iterNo, srcId, dstId, nReducers);
+        neighbors("/tmp/iter"+iterNo, outputDir, srcId, dstId, nReducers);
+        
+        while (iterationsLeft > 0 && !hasResultAtPath(outputDir)) {
+        	iter("/tmp/iter"+iterNo, "/tmp/iter"+(++iterNo), srcId, dstId, iterNo, nReducers);  
+        	neighbors("/tmp/iter"+iterNo, outputDir, srcId, dstId, nReducers);
+        	iterationsLeft--;
+        }
+    }
+    
+    // ---------------------------------------------------------------------------------------------
     
     boolean hasResultAtPath(String path) throws Exception {
     	return Utils.checkResults(FileSystem.get(PoIDriver.GET.getConf()), new Path(path));
