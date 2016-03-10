@@ -1,3 +1,6 @@
+A simple MapReduce program for my "Cloud Computing" class.
+
+
 Note that you do not need to have Gradle installed to run the following
 commands. The gradle wrapper will automatically download the correct Gradle
 version. If you do have Gradle installed and don't want to use the wrapper, use
